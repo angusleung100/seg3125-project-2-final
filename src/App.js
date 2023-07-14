@@ -44,12 +44,12 @@ function App() {
     <body>
       <Routes>
             <Route index element={<Landing />} />
-            <Route path="/history" element={<History />} />
-            <Route path="/holdings" element={<Holdings />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/insights" element={<Insights />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="history" element={<History />} />
+            <Route path="holdings" element={<Holdings />} />
+            <Route path="services" element={<Services />} />
+            <Route path="insights" element={<Insights />} />
+            <Route path="team" element={<Team />} />
+            <Route path="contact" element={<Contact />} />
 
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
