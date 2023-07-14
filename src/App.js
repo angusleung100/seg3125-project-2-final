@@ -10,29 +10,29 @@ function App() {
           <header className="App-header">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/">HKHI</a>
+              <a class="navbar-brand" href="https://angusleung100.github.io/seg3125-project-2/">HKHI</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link"href="/history">Our History</a>
+                    <a class="nav-link"href="https://angusleung100.github.io/seg3125-project-2/#/history">Our History</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/holdings">Holdings</a>
+                    <a class="nav-link" href="https://angusleung100.github.io/seg3125-project-2/#/holdings">Holdings</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/services">Services</a>
+                    <a class="nav-link" href="https://angusleung100.github.io/seg3125-project-2/#/services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/insights">Insights</a>
+                    <a class="nav-link" href="https://angusleung100.github.io/seg3125-project-2/#/insights">Insights</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/team">Team</a>
+                    <a class="nav-link" href="https://angusleung100.github.io/seg3125-project-2/#/team">Team</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="https://angusleung100.github.io/seg3125-project-2/#/contact">Contact</a>
                   </li>
                 </ul>
                 <a class="d-flex nav-link"href="#">EN</a>
@@ -44,12 +44,12 @@ function App() {
     <body>
       <Routes>
             <Route index element={<Landing />} />
-            <Route path="/history" element={<History />} />
-            <Route path="/holdings" element={<Holdings />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/insights" element={<Insights />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="history" element={<History />} />
+            <Route path="holdings" element={<Holdings />} />
+            <Route path="services" element={<Services />} />
+            <Route path="insights" element={<Insights />} />
+            <Route path="team" element={<Team />} />
+            <Route path="contact" element={<Contact />} />
 
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
@@ -79,7 +79,7 @@ function Landing() {
             <h2>Unlock the potential of the Asia-Pacific Markets</h2>
             <h5>From Hong Kong to London, from Johannesburg to New Delhi, let us help you reach your investing goals.</h5>
             <br/>
-            <a href="/services"><button type="button" class="btn btn-light">Become A Client</button></a>
+            <a href="https://angusleung100.github.io/seg3125-project-2/#/services"><button type="button" class="btn btn-light">Become A Client</button></a>
           </div>
         </div>
         
