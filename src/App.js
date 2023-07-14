@@ -44,12 +44,12 @@ function App() {
     <body>
       <Routes>
             <Route index element={<Landing />} />
-            <Route path="history" element={<History />} />
-            <Route path="holdings" element={<Holdings />} />
-            <Route path="services" element={<Services />} />
-            <Route path="insights" element={<Insights />} />
-            <Route path="team" element={<Team />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/holdings" element={<Holdings />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/insights" element={<Insights />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
 
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
@@ -162,7 +162,8 @@ function Services() {
           <p>
             Our world-class financial analysts and trading team will help you grow your money with investments across different sectors and asset classes. With us at the helm, you know your funds and future are safe.
           </p>
-          <img src={require('./images/DSC00506.JPG')} alt="Picture of financial building" height="200" />
+          <img src={require('https://live.staticflickr.com/4124/5099605109_bd04b3c786_b.jpg')} alt="Picture of financial building" height="200" />
+          <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37387065@N05/5099605109">Analyzing Financial Data</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37387065@N05">Dave Dugdale</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img></a>. </p>
           <h3>Venture Capital</h3>
           <p>Interested in seed funding or investing in the next big thing? We can connect startupos and potential investors together with the same goal in mind: Succeeding. As an investor, we do all the due diligence for you.
             As a startup, we guide you through the pitch process.
