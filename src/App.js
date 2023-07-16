@@ -241,23 +241,23 @@ function Holdings() {
             </tr>
             <tr>  
               <td>2022</td>
-              <td>$4.00 million</td>
-              <td>1.00%</td>
+              <td>$133.63 million</td>
+              <td>33.41%</td>
             </tr>
             <tr>  
               <td>2021</td>
-              <td>$10.00 million</td>
-              <td>2.50%</td>
+              <td>$82.30 million</td>
+              <td>20.58%</td>
             </tr>
             <tr>  
               <td>2020</td>
-              <td>$40.00 million</td>
-              <td>10.00%</td>
+              <td>$51.06 million</td>
+              <td>12.77%</td>
             </tr>
             <tr>  
               <td>2019</td>
-              <td>$25.00 million</td>
-              <td>6.25%</td>
+              <td>$100.89 million</td>
+              <td>25.22%</td>
             </tr>
           </table>
           <a href="/hkhi-historical-performance.pdf">Historical Fund Performance (All Time) &#62;&#62;</a>
