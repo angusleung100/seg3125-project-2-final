@@ -162,13 +162,13 @@ function Services() {
           <p>
             Our world-class financial analysts and trading team will help you grow your money with investments across different sectors and asset classes. With us at the helm, you know your funds and future are safe.
           </p>
-          <img src={require('https://live.staticflickr.com/4124/5099605109_bd04b3c786_b.jpg')} alt="Picture of financial building" height="200" />
-          <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37387065@N05/5099605109">Analyzing Financial Data</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37387065@N05">Dave Dugdale</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img></a>. </p>
+          <img src={require('./images/IMG_3914.JPG')} alt="Picture of Montreal skyline" width="400" />
+          <br /><br />
           <h3>Venture Capital</h3>
           <p>Interested in seed funding or investing in the next big thing? We can connect startupos and potential investors together with the same goal in mind: Succeeding. As an investor, we do all the due diligence for you.
             As a startup, we guide you through the pitch process.
           </p>
-          <img src={require('./images/DSC00506.JPG')} alt="Picture of financial building in Ottawa, Canada" height="200" />
+          <img src={require('./images/IMG_2764.JPG')} alt="Picture of a busy shop street in Ueno, Tokyo" width="400" />
           <br/>
           <br/>
 
@@ -260,7 +260,7 @@ function Holdings() {
               <td>6.25%</td>
             </tr>
           </table>
-          <a href="#">Historical Fund Performance (All Time) &#62;&#62;</a>
+          <a href="/hkhi-historical-performance.pdf">Historical Fund Performance (All Time) &#62;&#62;</a>
         </div>
 
 
@@ -363,7 +363,7 @@ function Team() {
             <tr>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Terrance Edward Laurence</b><br/>
@@ -374,7 +374,7 @@ function Team() {
               </td>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Mike Hunt</b><br/>
@@ -389,7 +389,7 @@ function Team() {
             <tr>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Ho Lee Fook</b><br/>
@@ -400,7 +400,7 @@ function Team() {
               </td>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Xiao Yu Zhang</b><br/>
@@ -415,7 +415,7 @@ function Team() {
             <tr>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Travis Carnegie</b><br/>
@@ -426,7 +426,7 @@ function Team() {
               </td>
               <td>
                 <tr>
-                  <td><img src={require('./images/court.jpg')} height="200" width="200"></img></td>
+                  <td><img src={require('./images/profiles/blank.png')} height="200" width="200" alt="Blank profile placeholder"></img></td>
                   <td>
                     <p>
                       <b>Hadrian Lawson</b><br/>
@@ -463,8 +463,12 @@ function Contact() {
                   111 Queen's Road Central<br/>
                   Hong Kong, Hong Kong
                   <br/>
-                  <u>Phone:</u> 852 5555 4444<br />
-                  <u>Email:</u> hk@hkhi.com<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> : 852 5555 4444<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg> : hk@hkhi.com<br />
                 </p>
               </td>
               <td>
@@ -473,8 +477,12 @@ function Contact() {
                   145 Bay Street<br/>
                   Toronto, Ontario, Canada
                   <br/>
-                  <u>Phone:</u> 416 555 1616<br />
-                  <u>Email:</u> toronto@hkhi.com<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> : 416 555 1616<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg> : toronto@hkhi.com<br />
                 </p>
               </td>
               <td>
@@ -483,8 +491,12 @@ function Contact() {
                   22 Zhongshan Dongyilu<br/>
                   Shanghai, China
                   <br/>
-                  <u>Phone:</u> 21 1222 5555<br />
-                  <u>Email:</u> shanghai@hkhi.com<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> : 21 1222 5555<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg> : shanghai@hkhi.com<br />
                 </p>
               </td>
             </tr>
@@ -496,8 +508,12 @@ function Contact() {
                   Unit 2 Canada Square<br/>
                   London, United Kingdom
                   <br/>
-                  <u>Phone:</u> 44 345 456 7894<br />
-                  <u>Email:</u> london@hkhi.com<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> : 44 345 456 7894<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg> : london@hkhi.com<br />
                 </p>
               </td>
               <td>
@@ -506,8 +522,12 @@ function Contact() {
                   12 Bayfront Ave<br/>
                   Singapore
                   <br/>
-                  <u>Phone:</u> 65 1234 5648<br />
-                  <u>Email:</u> singapore@hkhi.com<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> : 65 1234 5648<br />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg> : singapore@hkhi.com<br />
                 </p>
               </td>
               <td>
