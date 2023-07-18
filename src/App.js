@@ -53,8 +53,8 @@ function App() {
 
             {/* Sample articles */}
             <Route path="article/2023/06/18/US-Treasury-Uneasy-About-Debt-Ceiling" element={<ArticleOne />} />
-            <Route path="article/2023/06/18/Storms-Destroy-City-In-American-Samoa" element={<ArticleOne />} />
-            <Route path="article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As" element={<ArticleOne />} />
+            <Route path="article/2023/06/18/Storms-Destroy-City-In-American-Samoa" element={<ArticleTwo />} />
+            <Route path="article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As" element={<ArticleThree />} />
 
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
