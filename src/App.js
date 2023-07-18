@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -50,6 +50,11 @@ function App() {
             <Route path="insights" element={<Insights />} />
             <Route path="team" element={<Team />} />
             <Route path="contact" element={<Contact />} />
+
+            {/* Sample articles */}
+            <Route path="article/2023/06/18/US-Treasury-Uneasy-About-Debt-Ceiling" element={<ArticleOne />} />
+            <Route path="article/2023/06/18/Storms-Destroy-City-In-American-Samoa" element={<ArticleOne />} />
+            <Route path="article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As" element={<ArticleOne />} />
 
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
@@ -130,7 +135,7 @@ function History() {
         <div class="col-12">
           <h1>Our History</h1>
           <h3>Founding</h3>
-          <p>In 1905, an English merchantg docked in Hong Kong and could not find a bank to finance his ventures. Realizing this, he and a group of like-minded merchants established
+          <p>In 1905, an English merchant docked in Hong Kong and could not find a bank to finance his ventures. Realizing this, he and a group of like-minded merchants established
             the Hong Kong Harbour Trading Company. Years went by and as wars were won and lost, the economies of The East went up and down. The mid 1900s saw an economic boom in Asia
             and seeing this opportunity, the Hong Kong Harbour Trading Company pivoted and become the Hong Kong Harbour Investment Group.
           </p>
@@ -327,23 +332,27 @@ function Insights() {
                 <th>Article Name</th>
                 <th>Published Date</th>
                 <th>Author</th>
+                <th>Tags</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><a href="#">US Treasury Uneasy About Debt Ceiling</a></td>
+                <td><a href="/article/2023/06/18/US-Treasury-Uneasy-About-Debt-Ceiling">US Treasury Uneasy About Debt Ceiling</a></td>
                 <td>Jun 18 2023</td>
                 <td>H.K. Leong</td>
+                <td>Economy, Bonds, North America Markets</td>
               </tr>
               <tr>
-                <td><a href="#">Storms Destroy City in American Samoa</a></td>
+                <td><a href="/article/2023/06/18/Storms-Destroy-City-In-American-Samoa">Storms Destroy City in American Samoa</a></td>
                 <td>Jun 18 2023</td>
                 <td>H.K. Leong</td>
+                <td>Economy, Asia Pacific Markets</td>
               </tr>
               <tr>
-                <td><a href="#">Money Rains Down On Stock Exchange As Citizens Pour Useless Inflated Currency As Demonstrations Rise</a></td>
+                <td><a href="/article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As">Money Rains Down On Stock Exchange As Citizens Pour Useless Inflated Currency As Demonstrations Rise</a></td>
                 <td>Jun 17 2023</td>
                 <td>A. Bort</td>
+                <td>Stocks, Economy, Lifestyle, North America Markets</td>
               </tr>
             </tbody>
           </table>
@@ -590,5 +599,62 @@ function Nonexistent() {
     </div>
   );
 }
+
+// Articles
+
+function ArticleOne() {
+  return(
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <h1>US Treasury Uneasy About Debt Ceiling</h1>
+          <h4>Author: H.K. Leong</h4>
+          <hr/>
+          <p></p>
+        </div>
+        
+      </div>
+      
+
+    </div>
+  );
+}
+
+function ArticleTwo() {
+  return(
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Storms Destroy City in American Samoa</h1>
+          <h4>Author: H.K. Leong</h4>
+          <hr/>
+          <p></p>
+        </div>
+        
+      </div>
+      
+
+    </div>
+  );
+}
+
+function ArticleThree() {
+  return(
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Money Rains Down On Stock Exchange As Citizens Pour Useless Inflated Currency As Demonstrations Rise</h1>
+          <h4>Author: A. Bort</h4>
+          <hr/>
+          <p></p>
+        </div>
+        
+      </div>
+      
+
+    </div>
+  );
+}
+
 
 export default App;
