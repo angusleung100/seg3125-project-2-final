@@ -610,7 +610,16 @@ function ArticleOne() {
           <h1>US Treasury Uneasy About Debt Ceiling</h1>
           <h4>Author: H.K. Leong</h4>
           <hr/>
-          <p></p>
+          <p>The US and possibly world economy was on the brink of devastation just several weeks ago with the US Treasury announcing the United States debt ceiling was close to being reached.
+            Due to the importance of the United States in world economics and as a global trading partner, this was deeply concerning for economists all around the world hoping a deal would be struck.
+          </p>
+          <p>
+            Republicans and Democrats ended up coming to a deal that would raise the debt ceiling and keep the world economy running.
+          </p>
+          <p>
+            This only delays the inevitable. Without the United States putting forward a plan to pay down the debt, a raise of the debt ceiling each year would eventually make investors lose faith in the
+            laws of economics and see the United States as a country that simply "prints" it's way out of trouble with US dollars and bonds.
+          </p>
         </div>
         
       </div>
@@ -628,7 +637,12 @@ function ArticleTwo() {
           <h1>Storms Destroy City in American Samoa</h1>
           <h4>Author: H.K. Leong</h4>
           <hr/>
-          <p></p>
+          <p>Just last weekend, an island in American Samoa was hit by a tropical storm that decimated houses and fisheries along its coastline. As a city focused on tourism, this was a blow
+            to the local economy, with tourists hesitant on continuing their trips as the storms rage on throughout The Pacific. The territory is a hotspot for tourists and have been very successful
+            in attracting business for international tour and cruise companies. 
+          </p>
+          <p>The local government has stated that repairs will be underway and to hope for the best in such a dire situation as first aid and recovery efforts are stretched thin.</p>
+          <p>At HKHI, we are bearish on the tour and cruise companies as the American Samoa packages for these companies are very successful and would be a big hit to their profits.</p>
         </div>
         
       </div>
@@ -646,7 +660,16 @@ function ArticleThree() {
           <h1>Money Rains Down On Stock Exchange As Citizens Pour Useless Inflated Currency As Demonstrations Rise</h1>
           <h4>Author: A. Bort</h4>
           <hr/>
-          <p></p>
+          <p>At the start of trading hours on Monday, thousands of demonstrators took to the streets of the financial district of a Venezuelan city
+            and threw thousands of worthless paper bills on the ground and set fire to the stock exchange to protest the poor economic conditions of
+            the country. Riot police were deployed, as well as officers the secret police to silence the demonstrations.
+          </p>
+          <p>
+            Due to the lack of economic growth, the equipment for the local oil reserves were not being used to their full capacity and resulted in
+            a depression among the South American countries. There is no indication when the stability will be returning. However, this is similar to
+            the situation in Hong Kong when secret police were deployed to investigate protestors and dissuade civil unrest during the economic crackdown
+            on excessive waste of food.
+          </p>
         </div>
         
       </div>
