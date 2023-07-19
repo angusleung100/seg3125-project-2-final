@@ -56,6 +56,8 @@ function App() {
             <Route path="article/2023/06/18/Storms-Destroy-City-In-American-Samoa" element={<ArticleTwo />} />
             <Route path="article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As" element={<ArticleThree />} />
 
+            <Route path="success" element={<Success />} />
+
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
                   routes for. */}
@@ -176,12 +178,15 @@ function Services() {
           <img src={require('./images/IMG_2764.JPG')} alt="Picture of a busy shop street in Ueno, Tokyo" width="400" />
           <br/>
           <br/>
-
+          <hr />
           <h3>Want to be a client?</h3>
-          <form class="col-4">
+          <form action="/success" class="col-4">
             <label>Name:</label>
             <input type="text" class="form-control"/>
-
+            <label>Email:</label>
+            <input type="email" class="form-control"/>
+            <label>Phone Number:</label>
+            <input type="text" class="form-control"/>
             <label>Interested Services:</label>
             <select class="form-select">
               <option>Financial Management</option>
@@ -190,9 +195,26 @@ function Services() {
             <label>Message:</label>
             <textarea class="form-control"/>
             <br/>
-            <input type="submit" value="Send Inquiry" class="btn btn-secondary"/>
+            <input type="submit" value="Send Inquiry" class="btn btn-secondary" onclick="response()"/>
           </form>
+        </div>
+        
+      </div>
+      
 
+    </div>
+  );
+}
+
+function Success() {
+  return(
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Message Sent Successfully!</h1>
+          <p>Your message inquiring about our offered services has been received and we will get back to you within the next business day!</p>
+          <br />
+          <a href="/services">Go back to Services</a>
         </div>
         
       </div>
