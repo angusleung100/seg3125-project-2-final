@@ -1,7 +1,13 @@
 import { Routes, Route } from "react-router-dom";
+import React, { useMemo, useState } from "react";
+import { Container, Input, Spacer, Table } from "@nextui-org/react";
+
+import { columns, rows } from "./search";
+
 import './App.css';
 
 function App() {
+
   return (
     <div className='wrapper'>
 
@@ -299,48 +305,110 @@ function Holdings() {
 }
 
 function Insights() {
+  
+  // Referenced from FranciscoMendes10866's tutorial at
+  // https://dev.to/franciscomendes10866/react-basic-search-filter-1fkh
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredRows = useMemo(() => {
+    if (!searchTerm) return rows;
+
+    if (rows.length > 0) {
+      const attributes = Object.keys(rows[0]);
+
+      const filteredArticles = [];
+
+      for (const current of rows) {
+        for (const attribute of attributes) {
+          if (attribute === "key") {
+            continue;
+          }
+          const value = current[attribute];
+          if (value.includes(searchTerm)) {
+            const matched = rows.find((row) => row.key === current.key);
+            if (found) {
+              filteredArticles.push(matched);
+            }
+          }
+        }
+      }
+      return filteredArticles;
+    }
+
+    return [];
+  }, [searchTerm, rows]);
+
+  const filterAPAC = () =>  {
+    document.getElementById("searchbar").value = "Asia Pacific Markets";
+    setSearchTerm("Asia Pacific Markets")
+  }
+  const filterMENA = () =>  {
+    document.getElementById("searchbar").value = "Middle East North Africa Markets";
+    setSearchTerm("Middle East North Africa Markets")
+  }
+
+  const filterNA = () =>  {
+    document.getElementById("searchbar").value = "North America Markets";
+    setSearchTerm("North America Markets")
+  }
+
+  const filterSA = () =>  {
+    document.getElementById("searchbar").value = "South America Markets";
+    setSearchTerm("South America Markets")
+  }
+
+  const filterEU = () =>  {
+    document.getElementById("searchbar").value = "European Markets";
+    setSearchTerm("European Markets")
+  }
+
+  const filterMESA = () =>  {
+    document.getElementById("searchbar").value = "East South African Markets";
+    setSearchTerm("East South African Markets")
+  }
+
   return(
     <div>
+
       <div class="row">
         <div class="col-6">
           <h1>Insights</h1>
           <form id="filters">
             <label><b><u>Filter By Market:</u></b> </label>
-            <input type="checkbox"/>
-            <label>APAC</label>
-            <input type="checkbox"/>
-            <label>ME</label>
-            <input type="checkbox"/>
-            <label>NA</label>
-            <input type="checkbox"/>
-            <label>SA</label>
-            <input type="checkbox"/>
-            <label>EU</label>
-            <input type="checkbox"/>
-            <label>AF</label>
+            <input type="radio" onChange={filterAPAC} />
+            <label>Asia Pacific (APAC)</label>
+            <input type="radio"/>
+            <label>Middle-East North Africa (MENA)</label>
+            <input type="radio"/>
+            <label>North America (NA)</label>
+            <input type="radio"/>
+            <label>South America (SA)</label>
+            <input type="radio"/>
+            <label>Europe (EU)</label>
+            <input type="radio"/>
+            <label>Southern Africa (MESA)</label>
 
             <br/>
 
             <label><b><u>Filter By Topic:</u></b> </label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Economy</label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Politics</label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Commodities</label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Bonds</label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Stocks</label>
-            <input type="checkbox"/>
+            <input type="radio"/>
             <label>Lifestyle</label>
           </form>
         </div>
         <div class="col-6 d-flex justify-content-end">
           <h1></h1>
           <form id="filters">
-            <input type="text" placeholder="Search Article..."/>
-            <input type="submit" value="Search"/>
+            <Input id="searchbar" placeholder="Search Article..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             
           </form>
         </div>
@@ -348,36 +416,24 @@ function Insights() {
 
       <div class="row">
         <div class="col-12">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Article Name</th>
-                <th>Published Date</th>
-                <th>Author</th>
-                <th>Tags</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="/article/2023/06/18/US-Treasury-Uneasy-About-Debt-Ceiling">US Treasury Uneasy About Debt Ceiling</a></td>
-                <td>Jun 18 2023</td>
-                <td>H.K. Leong</td>
-                <td>Economy, Bonds, North America Markets</td>
-              </tr>
-              <tr>
-                <td><a href="/article/2023/06/18/Storms-Destroy-City-In-American-Samoa">Storms Destroy City in American Samoa</a></td>
-                <td>Jun 18 2023</td>
-                <td>H.K. Leong</td>
-                <td>Economy, Asia Pacific Markets</td>
-              </tr>
-              <tr>
-                <td><a href="/article/2023/06/17/Money-Rains-Down-On-Stock-Exchange-As">Money Rains Down On Stock Exchange As Citizens Pour Useless Inflated Currency As Demonstrations Rise</a></td>
-                <td>Jun 17 2023</td>
-                <td>A. Bort</td>
-                <td>Stocks, Economy, Lifestyle, North America Markets</td>
-              </tr>
-            </tbody>
-          </table>
+          <Table class="table table-bordered">
+            <Table.Header>
+              {columns.map((column) =>  (
+                <Table.Column key={column.key}>{column.label}</Table.Column>               
+              ))}
+            </Table.Header>
+              
+            <Table.Body>
+              {filteredRows.map((row) =>  (
+                <Table.Row key={row.key}>
+                  <Table.Cell><a href={row.link}>{row.title}</a></Table.Cell>
+                  <Table.Cell>{row.date}</Table.Cell>
+                  <Table.Cell>{row.author}</Table.Cell>
+                  <Table.Cell>{row.tags}</Table.Cell>
+                </Table.Row>
+              ))}
+            </Table.Body>
+          </Table>
         </div>
       </div>
     </div>
