@@ -580,6 +580,7 @@ function Contact() {
     <div>
       <div class="row">
         <div class="col-12">
+          <h1>Contact</h1>
           <h3>Offices</h3>
           <table id="locations">
             <tr>
