@@ -1,6 +1,7 @@
 {
   "name": "seg3125-project-2-final",
   "version": "0.1.0",
+  "homepage": "https://angusleung100.github.io/seg3125-project-2-final",
   "private": true,
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.13",
@@ -28,6 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
