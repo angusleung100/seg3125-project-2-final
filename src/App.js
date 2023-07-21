@@ -31,29 +31,29 @@ function App() {
           <header className="App-header">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/">HKHI</a>
+              <a class="navbar-brand" href="/seg3125-project-2-final/#/">HKHI</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link"href="/history">{t('ourhistory')}</a>
+                    <a class="nav-link"href="/seg3125-project-2-final/#/history">{t('ourhistory')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/holdings">{t('holdings')}</a>
+                    <a class="nav-link" href="/seg3125-project-2-final/#/holdings">{t('holdings')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/services">{t('services')}</a>
+                    <a class="nav-link" href="/seg3125-project-2-final/#/services">{t('services')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/insights">{t('insights')}</a>
+                    <a class="nav-link" href="/seg3125-project-2-final/#/insights">{t('insights')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/team">{t('team')}</a>
+                    <a class="nav-link" href="/seg3125-project-2-final/#/team">{t('team')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">{t('contact')}</a>
+                    <a class="nav-link" href="/seg3125-project-2-final/#/contact">{t('contact')}</a>
                   </li>
                 </ul>
                 <li class="d-flex nav-item dropdown">
@@ -118,7 +118,7 @@ function Landing() {
             <h2>{t('landingh2')}</h2>
             <h5>{t('landingh5')}</h5>
             <br/>
-            <a href="/services"><button type="button" class="btn btn-light">{t('becomeaclient')}</button></a>
+            <a href="/seg3125-project-2-final/#/services"><button type="button" class="btn btn-light">{t('becomeaclient')}</button></a>
           </div>
         </div>
         
@@ -217,7 +217,7 @@ function Services() {
           <br/>
           <hr />
           <h3>{t('wanttobeaclient')}</h3>
-          <form action="/success" class="col-4">
+          <form action="/seg3125-project-2-final/#/success" class="col-4">
             <label>{t('name')}:</label>
             <input type="text" class="form-control"/>
             <label>{t('email')}:</label>
@@ -254,7 +254,7 @@ function Success() {
           <h1>{t('successsent')}</h1>
           <p>{t('successmessage')}</p>
           <br />
-          <a href="/services">{t('successgoback')}</a>
+          <a href="/seg3125-project-2-final/#/services">{t('successgoback')}</a>
         </div>
         
       </div>
@@ -330,7 +330,7 @@ function Holdings() {
               <td>25.22%</td>
             </tr>
           </table>
-          <a href="/hkhi-historical-performance.pdf">Historical Fund Performance (All Time) &#62;&#62;</a>
+          <a href="/seg3125-project-2-final/#/hkhi-historical-performance.pdf">Historical Fund Performance (All Time) &#62;&#62;</a>
         </div>
 
 
