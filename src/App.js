@@ -1,16 +1,31 @@
 import { Routes, Route } from "react-router-dom";
 import React, { useMemo, useState } from "react";
 import { Container, Input, Spacer, Table } from "@nextui-org/react";
+import { useTranslation } from 'react-i18next';
 
 import { columns, rows } from "./search";
+
 
 import './App.css';
 
 function App() {
 
-  return (
-    <div className='wrapper'>
 
+  const { t, i18n } = useTranslation(); 
+
+  function changeToEN(e) {
+    i18n.changeLanguage("en");
+    localStorage.setItem("lang", "en");
+  }
+
+  function changeToCT(e) {
+    i18n.changeLanguage("ct");
+    localStorage.setItem("lang", "ct");
+  }
+
+  return (
+    
+    <div className='wrapper'>
 
         <div className="App">
           <header className="App-header">
@@ -23,25 +38,33 @@ function App() {
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link"href="/history">Our History</a>
+                    <a class="nav-link"href="/history">{t('ourhistory')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/holdings">Holdings</a>
+                    <a class="nav-link" href="/holdings">{t('holdings')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/services">Services</a>
+                    <a class="nav-link" href="/services">{t('services')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/insights">Insights</a>
+                    <a class="nav-link" href="/insights">{t('insights')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/team">Team</a>
+                    <a class="nav-link" href="/team">{t('team')}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/contact">{t('contact')}</a>
                   </li>
                 </ul>
-                <a class="d-flex nav-link"href="#">EN</a>
+                <li class="d-flex nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onClick={changeToEN}>EN</a></li>
+                    <li><a class="dropdown-item" href="#" onClick={changeToCT}>中 (繁)</a></li>
+                  </ul>
+                </li>
               </div>
           </div>
     </nav>
@@ -84,15 +107,18 @@ function App() {
 }
 
 function Landing() {
+
+  const { t, i18n } = useTranslation(); 
+
   return(
     <div>
       <div class="row">
         <div class="col-12">
           <div class="jumbotron">
-            <h2>Unlock the potential of the Asia-Pacific Markets</h2>
-            <h5>From Hong Kong to London, from Johannesburg to New Delhi, let us help you reach your investing goals.</h5>
+            <h2>{t('landingh2')}</h2>
+            <h5>{t('landingh5')}</h5>
             <br/>
-            <a href="/services"><button type="button" class="btn btn-light">Become A Client</button></a>
+            <a href="/services"><button type="button" class="btn btn-light">{t('becomeaclient')}</button></a>
           </div>
         </div>
         
@@ -100,7 +126,7 @@ function Landing() {
 
       <div class="row">
         <div class="col-12">
-          <img id="landing-image" src={require('./images/DSC00506.JPG')} alt="Financial Building" />
+          <img id="landing-image" src={require('./images/DSC00506.JPG')} alt={t('altlandingimg')} />
         </div>
         
       </div>
@@ -109,24 +135,24 @@ function Landing() {
         <div class="col-4">
           <div class="card h-100">
             <div class="card-body">
-              <h1>$400+ Million USD</h1>
-              <p>Assets Under Management</p>
+              <h1>{t('400millionusd')}</h1>
+              <p>{t('aum')}</p>
             </div>
           </div>
         </div>
         <div class="col-4">
           <div class="card h-100">
             <div class="card-body">
-              <h1>5 Offices</h1>
-              <p>Across 3 Continents</p>
+              <h1>{t('5offices')}</h1>
+              <p>{t('across3continents')}</p>
             </div>
           </div>
         </div>
         <div class="col-4">
           <div class="card  h-100">
             <div class="card-body">
-              <h1>117 Years</h1>
-              <p>Worth Of Company History</p>
+              <h1>{t('117years')}</h1>
+              <p>{t('worthofhistory')}</p>
             </div>
           </div>
         </div>
@@ -137,24 +163,26 @@ function Landing() {
 }
 
 function History() {
+
+  const { t, i18n } = useTranslation(); 
+
   return(
     <div>
       <div class="row">
         <div class="col-12">
-          <h1>Our History</h1>
-          <h3>Founding</h3>
-          <p>In 1905, an English merchant docked in Hong Kong and could not find a bank to finance his ventures. Realizing this, he and a group of like-minded merchants established
-            the Hong Kong Harbour Trading Company. Years went by and as wars were won and lost, the economies of The East went up and down. The mid 1900s saw an economic boom in Asia
-            and seeing this opportunity, the Hong Kong Harbour Trading Company pivoted and become the Hong Kong Harbour Investment Group.
+          <h1>{t('ourhistory')}</h1>
+          <h3>{t('founding')}</h3>
+          <p>
+          {t('foundingstoryp1')}
           </p>
           <p>
-            Over the years, it grew from a group of merchants to a company of 500+ employees strong, with regional offices across 3 continents in the former British Empire.
+          {t('foundingstoryp2')}
           </p>
-          <h3>Mission Statement</h3>
-          <p>Despite being an investment fiorm, we strive to make choices that positively impact the economic conditions of countries we invest and operate in. We work closely with
-            humanitarian organizations to improve the lives of the impoverished with yearly donations to these organizations from our profits and investing in infrastructure in these nations.
+          <h3>{t('missionstatement')}</h3>
+          <p>
+          {t('foundingstoryp3')}
           </p>
-          <img src={require('./images/court.jpg')} alt="Picture of an old colonial building in Hong Kong. The court." height="200" />
+          <img src={require('./images/court.jpg')} alt={t('althistoryimg')} height="200" />
         </div>
         
       </div>
@@ -165,43 +193,46 @@ function History() {
 }
 
 function Services() {
+
+  const { t, i18n } = useTranslation(); 
+
   return(
     <div>
       <div class="row">
         <div class="col-12">
-          <h1>Services</h1>
+          <h1>{t('services')}</h1>
 
-          <h3>Financial Management</h3>
+          <h3>{t('financialmanagement')}</h3>
           <p>
-            Our world-class financial analysts and trading team will help you grow your money with investments across different sectors and asset classes. With us at the helm, you know your funds and future are safe.
+          {t('servicesp1')}
           </p>
-          <img src={require('./images/IMG_3914.JPG')} alt="Picture of Montreal skyline" width="400" />
+          <img src={require('./images/IMG_3914.JPG')} alt={t('altservicesimg1')} width="400" />
           <br /><br />
-          <h3>Venture Capital</h3>
-          <p>Interested in seed funding or investing in the next big thing? We can connect startupos and potential investors together with the same goal in mind: Succeeding. As an investor, we do all the due diligence for you.
-            As a startup, we guide you through the pitch process.
+          <h3>{t('venturecapital')}</h3>
+          <p>
+          {t('servicesp2')}
           </p>
-          <img src={require('./images/IMG_2764.JPG')} alt="Picture of a busy shop street in Ueno, Tokyo" width="400" />
+          <img src={require('./images/IMG_2764.JPG')} alt={t('altservicesimg2')} width="400" />
           <br/>
           <br/>
           <hr />
-          <h3>Want to be a client?</h3>
+          <h3>{t('wanttobeaclient')}</h3>
           <form action="/success" class="col-4">
-            <label>Name:</label>
+            <label>{t('name')}:</label>
             <input type="text" class="form-control"/>
-            <label>Email:</label>
+            <label>{t('email')}:</label>
             <input type="email" class="form-control"/>
-            <label>Phone Number:</label>
+            <label>{t('phoneno')}:</label>
             <input type="text" class="form-control"/>
-            <label>Interested Services:</label>
+            <label>{t('interestedservices')}:</label>
             <select class="form-select">
-              <option>Financial Management</option>
-              <option>Venture Capital</option>
+              <option>{t('financialmanagement')}</option>
+              <option>{t('venturecapital')}</option>
             </select>
-            <label>Message:</label>
+            <label>{t('message')}:</label>
             <textarea class="form-control"/>
             <br/>
-            <input type="submit" value="Send Inquiry" class="btn btn-secondary" onclick="response()"/>
+            <input type="submit" value={t('sendinquiry')} class="btn btn-secondary" onclick="response()"/>
           </form>
         </div>
         
@@ -213,14 +244,17 @@ function Services() {
 }
 
 function Success() {
+
+  const { t, i18n } = useTranslation(); 
+
   return(
     <div>
       <div class="row">
         <div class="col-12">
-          <h1>Message Sent Successfully!</h1>
-          <p>Your message inquiring about our offered services has been received and we will get back to you within the next business day!</p>
+          <h1>{t('successsent')}</h1>
+          <p>{t('successmessage')}</p>
           <br />
-          <a href="/services">Go back to Services</a>
+          <a href="/services">{t('successgoback')}</a>
         </div>
         
       </div>
@@ -231,6 +265,9 @@ function Success() {
 }
 
 function Holdings() {
+
+  const { t } = useTranslation(); 
+  
   return(
     <div>
       <div class="row">
@@ -305,6 +342,8 @@ function Holdings() {
 }
 
 function Insights() {
+
+  
   
   // Referenced from FranciscoMendes10866's tutorial at
   // https://dev.to/franciscomendes10866/react-basic-search-filter-1fkh
@@ -326,7 +365,7 @@ function Insights() {
           const value = current[attribute];
           if (value.includes(searchTerm)) {
             const matched = rows.find((row) => row.key === current.key);
-            if (found) {
+            if (matched) {
               filteredArticles.push(matched);
             }
           }

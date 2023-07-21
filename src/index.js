@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals';
 
 import { NextUIProvider } from "@nextui-org/react";
 
+import './i18n/config';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
